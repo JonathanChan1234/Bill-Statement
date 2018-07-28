@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jonathan.billstatement.Details">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="300sp">
+            <TableRow>
+                <TextView
+                    android:text="Last edited at"
+                    android:layout_column= "1"
+                    android:layout_width="200sp"
+                    android:layout_height="50sp" />
+                <TextView
+                    android:id="@+id/dateDetail"
+                    android:layout_column="2"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Description: "
+                    android:layout_column="1"
+                    android:layout_width="200sp"
+                    android:layout_height="50sp" />
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_column="2"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Categories"
+                    android:layout_column="1"
+                    android:layout_width="200sp"
+                    android:layout_height="50sp" />
+                <TextView
+                    android:id="@+id/categories"
+                    android:layout_column="2"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Amount"
+                    android:layout_column="1"
+                    android:layout_width="200sp"
+                    android:layout_height="50sp" />
+                <TextView
+                    android:id="@+id/amount"
+                    android:layout_column="2"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Outcome/Income"
+                    android:layout_column="1"
+                    android:layout_width="200sp"
+                    android:layout_height="50sp" />
+                <TextView
+                    android:id="@+id/type"
+                    android:layout_column="2"/>
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:id="@+id/editButton"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete Record"
+            android:id="@+id/deleteButton"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/backToMainMenu"
+        android:text="Back to Main Menu"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
